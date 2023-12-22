@@ -1,4 +1,4 @@
-# CPSC329-Project
+# SALTED HASHBROWNS
 
 ## Introduction
 This repository contains the saltedHashbrown project, a comprehensive web application providing various functionalities related to cybersecurity education.
