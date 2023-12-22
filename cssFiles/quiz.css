@@ -1,0 +1,117 @@
+/*CSS for start button*/
+.start-button {
+    width: auto;
+    padding: 10px;
+    border-radius: 10px;
+    border: solid 2px white;
+    background-color: transparent;
+    color: white;
+    margin: auto;
+    display: block;
+    margin-top: 5%;
+}
+
+.start-button:hover {
+    background-color: white;
+    color: black;
+    transition: all 0.3s ease;
+}
+
+/*CSS for quiz intro*/
+#quiz-text {
+    margin-top: 50px;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+    font-family: Montserrat, Arial;
+}
+
+.p-text {
+    color: rgb(241, 189, 165);
+    margin-bottom: 10px;
+    
+}
+
+#quiz-text-2 {
+    position: relative;
+    left: -3px;
+}
+/*-------------------------------------------------------------*/
+/*Below is the layout for the question section and the buttons*/
+
+.button-container{
+    display: flex;
+    column-gap: 1%;
+    row-gap: 5%;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+   padding: 2%;
+}
+
+.button {
+    width: 40%;
+    border-radius: 10px;
+    border: solid 2px white;
+    background-color: transparent;
+    color: white;
+    padding: 0.5%;
+    margin: 1%;
+}
+
+/*hover animations*/
+.button:hover:not([disabled]), #next-button:hover{
+    background-color: white;
+    color: black;
+    transition: all 0.3s ease;
+}
+
+/*select animation*/
+.button:focus, #next-button:focus{
+    background-color: white;
+    color: black;
+    outline: none;
+    -webkit-box-shadow: inset 0px 0px 5px #c1c1c1;
+    -moz-box-shadow: inset 0px 0px 5px #c1c1c1;
+    box-shadow: inset 0px 0px 5px #c1c1c1;
+
+}
+
+#next-button{
+    width: 6%;
+    border-radius: 10px;
+    border: solid 2px white;
+    background-color: transparent;
+    color: white;
+    padding: 0.5%;
+    position: relative;
+    left: 88%;   
+}
+
+/*-------------------------------------------------------------*/
+/*CSS for the text*/
+#question-header {
+    margin-top: 5%;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    color: rgb(241, 189, 165);
+    font-family: Montserrat, Arial;
+}
+
+#question-text {
+    margin-top: 1.5%;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+    font-family: Montserrat, Arial;
+}
+
+.correct{
+    background: #9aeabc;
+}
+
+.incorrect{
+    background: #ff9393;
+}

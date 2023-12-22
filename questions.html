@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Salted Hashbrowns</title>
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> 
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="cssFiles/general_styles.css">
+        <link rel="stylesheet" href="cssFiles/header_banner.css">
+        <link rel="stylesheet" href="cssFiles/quiz.css">
+    </head>
+    <body style="background: radial-gradient(circle at center, rgba(35,35,41,255), rgba(17,17,22,255));">
+        <header class="header">
+            <img style="margin-left: 160px; width: 120px; display: inline-block; margin-right: 110px;"src="images/logo.png">
+            
+            <nav class="navigation">
+                <a href="index.html">
+                    <button class="nav-button">
+                        <i class="fa-solid fa-house" style ="margin-right: 5px;"></i> HOME
+                    </button>
+                </a>
+
+                <a href="information.html">
+                    <button class="nav-button">
+                        <i class="fa-solid fa-circle-info" style="margin-right: 10px;"></i>INFORMATION
+                    </button>
+                </a>
+
+                <a href="quiz.html">
+                    <button class="nav-button" style="color: rgb(241, 189, 165);">
+                        <i class="fas fa-circle-question" style="margin-right: 5px;"></i> QUIZ
+                    </button>
+                </a>
+                <a href="passwordChecker.html" >
+                    <button class="nav-button">
+                        <i class="fa-solid fa-lock" style="margin-right: 10px;"></i>PASSWORD CHECKER
+                    </button>
+                </a>
+            </nav>
+        </header>
+
+        <div>
+            <h2 id="question-header"> <!--This should change as well going from Q1 to Q10-->
+                Question 5              
+            </h2>
+            <h5 id="question-text"> <!--This is just a place holder, should be able to change-->
+                What is the main difference between hashing and encryption? 
+            </h5> 
+        </div>
+        
+        <div class="button-container">
+            <button class="button">A: *answer*</button>    
+            <button class="button">B: *answer*</button>  
+            <button class="button">C: *answer*</button>  
+            <button class="button">D: *answer*</button> 
+            
+        </div>
+
+        <div>
+            <button id="next-button">Next</button>            
+        </div>
+
+
+<!---------------------------------------------------------------->
+        </main>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/xkpasswd@1.0.5/index.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.2.0/crypto-js.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/zxcvbn/4.4.2/zxcvbn.js"></script>
+        
+        <script src="javascriptFiles/quizcode.js"></script> <!--HAVE THE JS file already created just needs to be filled-->
+
+        <script src="javascriptFiles/homeScrollFadeIn.js"></script>
+        <script src="https://kit.fontawesome.com/2fb04333f0.js" crossorigin="anonymous"></script> <!--This enables the icons beside the tabs-->
+    </body>
+</html>

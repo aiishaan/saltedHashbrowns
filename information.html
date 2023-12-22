@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Salted Hashbrowns</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="cssFiles/general_styles.css">
+        <linK rel="stylesheet" href="cssFiles/header_main.css">
+        <link rel="stylesheet" href="cssFiles/information.css">
+    </head>
+
+    <body style="background: radial-gradient(circle at center, rgba(35,35,41,255), rgba(17,17,22,255));">
+        <header class="header">
+            <img style="margin-left: 160px; width: 120px; display: inline-block; margin-right: 110px;"src="images/logo.png">
+            
+            <nav class="navigation">
+                <a href="index.html">
+                    <button class="nav-button">
+                        <i class="fa-solid fa-house" style ="margin-right: 5px;"></i> HOME
+                    </button>
+                </a>
+
+                <a href="information.html">
+                    <button class="nav-button" style="color: rgb(241, 189, 165)";>
+                        <i class="fa-solid fa-circle-info" style="margin-right: 10px;"></i>INFORMATION
+                    </button>
+                </a>
+
+                <a href="quiz.html">
+                    <button class="nav-button">
+                        <i class="fas fa-circle-question" style="margin-right: 5px;"></i> QUIZ
+                    </button>
+                </a>
+                <a href="passwordChecker.html" >
+                    <button class="nav-button" >
+                        <i class="fa-solid fa-lock" style="margin-right: 10px;"></i>PASSWORD CHECKER
+                    </button>
+                </a>
+            </nav>
+        </header>
+    
+        <main>
+            <div class = "general-section">
+                <p class = "highlighted-info">
+                    LEARN THE FUNDAMENTALS
+                </p> <br>
+                <h1> 
+                    Our Knowledge Base 
+                </h1>
+                <p>
+                    Here, you'll learn the FUNdamental concepts about passwords, hashes and salts. 
+                    Then you can test your knowledge in our <a href = "quiz.html" target = '_blank' rel="noopener noreferrer" class = "highlighted-info "> Quiz page</a>
+                    and try activities in our <a href = "passwordChecker.html" target = '_blank' rel="noopener noreferrer" class = "highlighted-info"> Password Checker!</a>
+                </p>
+            </div>
+
+            <div class = "general-section">
+                <img class = "line" src="images/line.png">
+                <br>
+                <h1 class = "underlined-text"> Passwords </h1> 
+                <br>
+                <p class = "highlighted-info"> What is a password? And why does it matter? </p> 
+                <p> A password is a (usually) secret combination of characters (letters, numbers, r@nd0m symb01s) that is used to authenticate a user's identity, 
+                    and therefore provide controlled access to services.
+                    Passwords ensure that only authorized individuals can gain access to protected information.
+                    <br>
+                    <br>
+                    So, if a password falls into the hands of the wrong person, they can falsely authenticate themselves as the intended user, gain access to confidential information, steal someone's identity, all the money to their name, and so much more...
+                </p> 
+                <p>
+                    You may be wondering; how do I keep my password secure? 
+                    Here's some guidelines from the <a href = "https://pages.nist.gov/800-63-3/sp800-63b.html#sec5National" target = '_blank' rel="noopener noreferrer" class = "highlighted-info"> 
+                    National Institute of Standards and Technology (NIST): </a>
+                </p>
+                <ol>
+                    <li> Avoid adding complexity using l33t speak, or adding numbers to some 'base' word </li>
+                        <ul>
+                            <li> This barely makes it harder for a hacker to get to you through a Brute-Force Attack </li>
+                            <li> It's harder to memorize for the user (you) </li>
+                        </ul>
+                    <li> Use at least 8 characters, but the longer the password, the better it is. </li> 
+                        <ul> <li> If the number of possible characters is 94 (26 upper-case + 26 lower-case + 10 digits + 32 symbols) then 94<sup>8</sup> different passwords are possible (for an 8-character password!). The password has <span class = "highlighted-info" > 52-bit entropy. </span></li>
+                            <ul>
+                                <li> <span class = "bold-text highlighted-info"> Bits of Entropy: </span> the strength of the password is defined by the number of attempts required to successfuly guess it. <br>
+                                If a password has <span class = "bold-text highlighted-info"> n-bit entropy </span> then it would take 2<sup>n</sup> tries to crack it!</li>
+                            </ul>
+                        </ul>
+                    <div class="hstack align-items-center note mascot-align">
+                        <img class="note-mascot" src="images/mascot.png">
+                        <div class="vstack justify-content-center">
+                            <p class="note-text"> The password "SaltedHashbrowns1" is 17 characters long. It uses upper-case, lower-case and numerical digits. The character set is (26 upper-case + 26 lower-case + 10 digits) = 62 characters.
+                                The number of guesses to crack the password will be 62<sup>17</sup>, or 2<sup>101.2</sup> with 101.2 bits of entropy</p>
+                            <p class="note-text"> Hint: the entropy is calculated by \(e = L(log(C)/log(2))\). L is the password length, C is the size of character set </p>
+                        </div>
+                    </div>
+                    <li> Avoid picking a word. It's better to mix characters randomly. Use different characters: upper-case, lower-case, numbers, symbols, Unicode... </li> 
+                    <div class="hstack align-items-center note mascot-align">
+                        <img class="note-mascot" src="images/mascot.png">
+                        <div class="vstack justify-content-center">
+                            <p class="note-text"> The passwords "SaltedHashbrowns1" and "A8eF0nd#j%lX*v$T" are both 17 characters long, and have the same 101.2 bit-entropy. But, the latter would be guessed much later in an attack. 
+                        </div>
+                    </div>
+                    <li> Don't use any passwords that are commonly known (maybe you'll find your password <a href = "https://nordpass.com/most-common-passwords-list/" target = '_blank' rel="noopener noreferrer" class = "highlighted-info"> here</a>
+                        ), as well as context-specific words (related to the you or the service, such as your username, the name of the service, etc). 
+                        It's better to just not use words!</li>
+                    <li> If asked to use a hint or secret question, use gibberish! Your mother's maiden name is not a secret, neither is your dog's first name...</li>
+                    <li> Use a <span class = "highlighted-info" > Password Manager, and Multi-Factor Authentication (MFA) </span></li>
+                        <ul> 
+                            <li> <span class="highlighted-info"> Password Managers </span>are a secure platform for master-storage of your passwords, controlled by a master password </li>
+                            <li> <span class="highlighted-info"> MFA </span>increases security as it involves using more than one authentication mechanism to verify a user's identity. 
+                                This can be done by the service asking for a PIN, or facial recognition along with your password to ensure it is really you entering the account! </li>
+                        </ul>
+                </ol>
+                <p>
+                    You may be wondering, how can someone even steal my password? How would they know my first pet's name? Well here's how!
+                </p>
+                <br>
+
+                <h2> Common Password Attacks </h2>
+                <ol>
+                    <li> Brute Force Attack: the hacker runs a script which attempts every possible password, one-by-one </li>
+                    <li> Keylogging: the hacker secretly implements a keylogger on your device, which is a tool that records your typing activity </li>
+                    <li> Dictionary Attack: generating a list of common passwords and trying different combinations on them. For example, trying Winter2020, then Winter2021 and so on...</li>
+                    <li> Phishing Attack: this involves a hacker psychologically manipulating someone to disclose their username and password, by pretending to be a trusted entity. 
+                        It is typically done through scam emails that take you fake websites. Be careful!</li>
+                </ol>
+            </div>
+
+            <div class = "general-section">
+                <img class = "line" src="images/line.png">
+                <h1 class = "underlined-text"> Hashes </h1>
+                <br>
+                <p> Let's get to the core of <span class = "highlighted-info" > Salted Hashbrowns. </span> We have to first start with the Hashes</p>
+                <p>
+                    Passwords cannot be stored in readable text <span class = "highlighted-info"> (plaintext) </span>, they must be stored in gibberish <span class = "highlighted-info"> (ciphertext). </span>
+                    Otherwise, anyone can easily steal your password file on your computer and read all of your passwords! 
+                    The process of converting readable text into gibberish is called <span class = "highlighted-info"> encryption, </span> and 
+                    <span class = "highlighted-info"> decryption </span> is the reverse of encryption (converting gibberish to readable text)
+                </p>
+                
+                <div class="hstack align-items-center note mascot-align">
+                    <img class="note-mascot" src="images/mascot.png">
+                    <div class="vstack justify-content-center">
+                        <p class="note-text"> <span class = "bold-text"> Encryption:</span> "hello" becomes "82efn" </p>
+                        <p class="note-text"> <span class= "bold-text"> Decryption:</span> "82efn" returns to "hello"</p>
+                    </div>
+                </div>
+                <br>
+                <p> A way to encrypt passwords is called <span class = "highlighted-info"> hashing. </span> But hashing only encrypts the data, which cannot then be decrypted. 
+                    Instead of storing the password, we store the hash, which comes from a <span class = "highlighted-info"> hash function. </span>
+                    So we are storing <span class = "highlighted-info" > f(x) = H(password) </span> or the output from putting your password into the hash function.
+                </p>
+
+                <h2> But what is a hash function? </h2>
+                <p> A function where you enter plaintext, it stirs it up, and you get gibberish. It turns the message into a short, unique, readable string. 
+                    There are many hash functions; <span class = "highlighted-info"> SHA-256 </span>(Secure Hash Algorithm 256-bit, which outputs a 256-bit hash) is very commonly used. 
+                    Another popular one is <span class = "highlighted-info"> MD5 </span>(Message Digest 5, with a 128-bit hash output)
+                </p>
+            </div>
+
+            <div class = "general-section">
+                <img class = "line" src="images/line.png">
+                <h1 class = "underlined-text"> Salts </h1>
+                <br>
+                <p> Onto the other half, we'll now discuss the Salt! </p>
+                <p> Since many people like to choose bland passwords, 
+                    (like your own name, your pet's name, and so on) hashing a password isn't enough. 
+                    <br>
+                    Therefore, when a password hash is stored (remember, NOT the password, but the hash), a salt is added for some extra security. So our typical process becomes: <Br>
+                    <span class = "highlighted-info" style="text-align: center; display: block;"> H(password) &rarr; H(password + salt) </span>
+                    <br>
+                    The <span class = "highlighted-info"> salt </span> is a large, randomly generated string which is different for each user. 
+                    So even if two people have the same password, which creates the same hash, the salt will be different and so will the overall encryption.
+                    <br>
+                    <div class="hstack align-items-center note mascot-align">
+                        <img class="note-mascot" src="images/mascot.png">
+                        <div class="vstack justify-content-center">
+                            <p class="note-text"> Jack's password is <span class= "bold-text"> BurntHashbrown </span> </p>
+                            <p class="note-text"> His salt is <span class= "bold-text">a29enth3s9kr14n</span></p>
+                            <p class="note-text"> So the salted hash of his password is <span class= "bold-text"> H("BurntHashbrown a29enth3s9kr14n") = "d9gne9fne8d2h4k"</span> </p>
+                            <p class="note-text"> Now Jill could have the same password, <span class= "bold-text"> BurntHashbrown </span>, but her salt would be completely different, resulting in a totally different encryption. </p>
+                        </div>
+                    </div>
+                    <br>
+                    Isn't that so smart?! One would think... but let's not jump to conclusions just yet.
+
+                    Salting passwords can slow some approaches to hacking, but not others. We can slow the hackers down by iterating hash functions:<br>
+                    <span class = "highlighted-info" style="text-align: center; display: block;"> H(H(H(H(H(H...H(password)))))) </span>
+                    This increases security and can slow hackers by magnitudes!
+                </p>
+            </div>
+
+            <div class = "general-section">
+                <img class = "line" src="images/line.png">
+                <br>
+                <h1 class = "underlined-text"> Congrats! </h1>
+                <br>
+                <p> This is just the beginning, now try the activites on our website to level up your new skills! </p>
+            </div>
+
+        </main>
+<!-- JS Files -->
+        <script src="https://kit.fontawesome.com/2fb04333f0.js" crossorigin="anonymous"></script> 
+        <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+    </body>
+        
+</html>

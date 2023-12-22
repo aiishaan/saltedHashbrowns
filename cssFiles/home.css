@@ -1,0 +1,140 @@
+@keyframes fadeInText {
+    from {
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.fade-in-element {
+    opacity: 0; 
+    animation: fadeInText 1s forwards;
+}
+
+.motivation-section {
+    height: 1200px;
+    background: radial-gradient(circle at center, rgba(35,35,41,255), rgba(17,17,22,255));
+}
+
+.motivation-text {
+    position: relative;
+    left: 175px;
+    color: rgb(241, 189, 165);
+    margin-bottom: 0;
+}
+
+.motivation-text-h1 {
+    color: white;
+    position: relative;
+    left: 172px;
+    margin-bottom: 50px;
+}
+
+.motivation-card {
+    background-color: transparent;
+    border-radius: 10px;
+    color: white;
+    font-family: Montserrat, Arial;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.motivation-img {
+    width: 90%;
+    height: auto;
+}
+
+.motivation-card {
+    color: rgb(241, 189, 165);
+}
+
+.motivation-card-space {
+    margin-right: 20px;
+    margin-left: 20px;
+    padding: 0;
+}
+
+.card {
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+.card-body {
+    position: relative; 
+}
+
+.card-name-text{
+    color: white;
+}
+
+.card-text {
+    color: white;
+    margin-left: 45px;
+}
+
+
+.card-text.more-info {
+    transform-origin: top; 
+    transform: scaleY(0); 
+    height: 0; 
+    transition: transform 0.3s ease-in-out, height 0s ease 0.3s; 
+    opacity: 0; 
+}
+  
+.card:hover .card-text.more-info {
+    transform: scaleY(1); 
+    height: auto; 
+    transition: transform 0.3s ease-in-out, height 0s ease 0s; 
+    opacity: 1; 
+    position: relative;
+    bottom: 40px;
+}
+
+.card:hover .card-see-more{
+    opacity: 0;
+}
+
+/*Team section css*/
+.team-section {
+    background-color: rgb(21, 21, 21);
+}
+
+.team-text {
+    position: relative;
+    left: 175px;
+    color: rgb(241, 189, 165);
+    margin-bottom: 0;
+}
+
+.team-text-h1 {
+    color: white;
+    position: relative;
+    left: 172px;
+    margin-bottom: 50px;
+}
+
+.team-img {
+    width: 200px;
+}
+
+.team-card-space {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.team-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+}
+
