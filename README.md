@@ -11,7 +11,7 @@ For the best viewing experience, use a screen resolution of 1920x1080 with a sca
 - Information Page (`information.html`): Contains educational content on cybersecurity.
 - Password Checker (`passwordChecker.html`): A tool to evaluate the strength of passwords.
 - Quiz (`quiz.html`): An interactive quiz to test cybersecurity knowledge.
-- Questions (`questions.html`): A page for users to submit their questions.
+- Questions (`questions.html`): A page for users to submit their questions
 
 ## Installation
 No installation is required. Simply clone the repository and open the HTML files in a web browser.<br>
