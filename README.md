@@ -7,7 +7,7 @@ This repository contains the saltedHashbrown project, a comprehensive web applic
 For the best viewing experience, use a screen resolution of 1920x1080 with a scale of 125%.
 
 ## Features
-- Home Page (`index.html`): The main landing page of the website.
+- Home Page (`index.html`): The main landing page of the website
 - Information Page (`information.html`): Contains educational content on cybersecurity
 - Password Checker (`passwordChecker.html`): A tool to evaluate the strength of passwords
 - Quiz (`quiz.html`): An interactive quiz to test cybersecurity knowledge
